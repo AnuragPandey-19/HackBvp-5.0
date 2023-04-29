@@ -100,7 +100,9 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nobis nesciunt atque perferendis, ipsa doloremque deserunt cum qui.</p> -->
 
               <!-- <img id="hero-image" style="margin-left: auto; margin-right: auto;" src="assets/img//background/logohack.png" width="200px" height="200px" alt=""> -->
-              <h1 class="banner-info">Build Thè Future<br> <br> <br> with{Hack@BVP}</h1>
+             <video class="mainlandvideo" autoplay src="assets/img/background/landbg.mp4"></video>
+              <!-- <h1 class="banner-info">Build Thè Future<br> <br> <br> with{Hack@BVP}</h1> -->
+              <h1><br> <br> <br> <br></h1>
               <div class="banner-btn">
                 <a href="" id="hero-register" class="btn btn-common">Register Now!</a>
                 <!-- <div class="loginbox">
@@ -147,7 +149,33 @@
       </section>
     </div>
     <!-- Hero Area End -->
+    <section id="count1">
+      <div class="count-wrapper text-center">
+        <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
+          <div id="clock" class="time-count">
 
+            <div class="count-item-main">
+              <h3 class="count-item" id="count-days1">%d</h3>
+              <h4>Days</h4>
+            </div>
+            <div class="count-item-main">
+              <h3 class="count-item" id="count-hours1">%h</h3>
+              <h4>Hours</h4>
+            </div>
+            <div class="count-item-main">
+              <h3 class="count-item" id="count-mins1">%m</h3>
+              <h4>Minutes</h4>
+            </div>
+            <div class="count-item-main">
+              <h3 class="count-item" id="count-sec1">%s</h3>
+              <h4>Seconds</h4>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
   </header>
   <!-- Header Area wrapper End -->
 
@@ -191,6 +219,7 @@
   <!-- about HACKBVP -->
 
   <section id="about" class="section-padding">
+  
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-xs-12">
@@ -1096,6 +1125,38 @@
       document.getElementById("count-hours").innerHTML = ('0' + hours).substr(-2);
       document.getElementById("count-mins").innerHTML = ('0' + minutes).substr(-2);
       document.getElementById("count-sec").innerHTML = ('0' + seconds).substr(-2);
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("clock").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("May 24, 2023 23:59:59").getTime();  //LAST DATE OF REGISTRATION
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("count-days1").innerHTML = ('0' + days).substr(-2);
+      document.getElementById("count-hours1").innerHTML = ('0' + hours).substr(-2);
+      document.getElementById("count-mins1").innerHTML = ('0' + minutes).substr(-2);
+      document.getElementById("count-sec1").innerHTML = ('0' + seconds).substr(-2);
 
       // If the count down is finished, write some text
       if (distance < 0) {
