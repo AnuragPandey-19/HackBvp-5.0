@@ -274,6 +274,18 @@ ol li {
   -webkit-transition: all 0.2s ease-in-out;
 }
 
+
+/* MAIN THEME */
+
+.maintheme{
+  width: 100%;
+  height: 70%;
+}
+.maintheme img{
+  width: 100%;
+}
+
+
 .about-content ul li {
   font-size: 18px;
 }
