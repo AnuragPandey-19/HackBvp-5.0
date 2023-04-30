@@ -659,12 +659,13 @@ a.back-to-top:focus {
 
 .navbar-brand {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .navbar-brand img {
   width: 75%;
+  size: 100px;
 }
 
 .top-nav-collapse {
@@ -925,9 +926,6 @@ a.back-to-top:focus {
     margin: 0;
   }
 
-  .banner-btn {
-    padding-top: 0;
-  }
 
   #count {
     /* display: none; */
@@ -2712,7 +2710,6 @@ div#clock {
 }
 
 @media (max-width: 445px) {
-
   .hero-area-bg {
     /* background: url(../img/hero-area.jpg) no-repeat; */
     /* background: url(../img/background/onlybg.png) no-repeat !important; */
@@ -2737,19 +2734,6 @@ div#clock {
     /* width: 10vw; */
     height: 12vh;
     padding: 10vw;
-  }
-
-  .banner-btn {
-    padding-top: 0px;
-  }
-
-  #count {
-
-    /* display: none; */
-  }
-
-  #count1 {
-    display: block;
   }
 
   #count .count-wrapper {
