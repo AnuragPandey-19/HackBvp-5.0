@@ -2579,11 +2579,11 @@ footer {
   background-color: linear-gradient(45deg, #ffffff 0, #000 100%);
 }
 
-img#nav-logo {
+/* img#nav-logo {
   width: 120px;
   height: auto;
   padding-top: 5px;
-}
+} */
 
 #hero-area .contents {
   padding: 160px 20px 180px;
@@ -2607,7 +2607,7 @@ img#nav-logo {
   margin-bottom: 22px;
   line-height: 24px;
   color: #fff;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 #hero-area .contents .banner-btn {
@@ -2727,6 +2727,9 @@ div#clock {
   #hero-area .contents .banner-btn {
     margin-top: 0px;
   }
+  #nav-logo{
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2763,6 +2766,13 @@ div#clock {
   #nav-container {
     background: #1c1c1c;
   }
+  /* @media (min-width:200px) and (max-width:1400px) {
+    #nav-container{
+      margin:60px;
+      padding: 10px;
+    }
+    
+  } */
 
   .about-content ul li {
     font-size: 17px !important;
