@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
 
 html {
   overflow-x: hidden;
@@ -49,6 +50,8 @@ h5 {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
 }
+
+
 
 a {
   -webkit-transition: all 0.2s linear;
@@ -293,12 +296,22 @@ ol li {
 .about-content ul li {
   font-size: 18px;
 }
+<<<<<<< Updated upstream
 
 .about-text p {
+=======
+.about-info {
+>>>>>>> Stashed changes
   font-size: 20px;
   letter-spacing: 0.5px;
 }
 
+<<<<<<< Updated upstream
+=======
+
+
+
+>>>>>>> Stashed changes
 .btn-border {
   color: #212121;
   background-color: transparent;
@@ -578,6 +591,8 @@ a.back-to-top:focus {
 }
 
 .section-padding {
+
+  /* height: 100vh; */
   padding: 60px 0;
 }
 
@@ -911,8 +926,12 @@ a.back-to-top:focus {
     padding: 0px 40px;
     color: #212121;
   }
+<<<<<<< Updated upstream
 
   .about-text p {
+=======
+  .about-info {
+>>>>>>> Stashed changes
     font-size: 16px;
   }
 }
@@ -965,7 +984,6 @@ a.back-to-top:focus {
   }
 
   .about-content .about-text h2 {
-    font-size: 38px !important;
     margin-top: 20px;
     text-align: center;
   }
@@ -980,7 +998,7 @@ a.back-to-top:focus {
 }
 
 #about {
-  background: #f6f9f9;
+  height: 100vh;
 }
 
 .about-content {
@@ -994,7 +1012,6 @@ a.back-to-top:focus {
 }
 
 .about-content .about-text h2 {
-  font-size: 40px;
   font-weight: 700;
 }
 
@@ -1005,10 +1022,22 @@ a.back-to-top:focus {
   margin-top: 20px;
 }
 
-.about-content .about-text p {
+.about-header {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.about-info{
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.about-content .about-info {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 17px;
 }
 
 .about-content ul {
@@ -2556,12 +2585,19 @@ footer {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
+<<<<<<< Updated upstream
   /* background: url(../img/hero-area.jpg) no-repeat; */
   /* background: url(../img/background/bgop.png) no-repeat; */
+=======
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+  /* background-image:url("../img/background/home-page-bg1.jpeg") ; */
+>>>>>>> Stashed changes
   background-size: cover;
   background-position: center center;
   height: 110vh;
 }
+
+
 
 #hero-area {
   color: #fff;
@@ -2602,16 +2638,23 @@ footer {
 }
 
 #hero-area .contents .banner-info {
-  font-size: 4vw;
-  font-style: italic;
-  margin-bottom: 22px;
-  line-height: 24px;
+  font-size: 36px;
+  font-family: 'Signika Negative', sans-serif;
   color: #fff;
+<<<<<<< Updated upstream
   margin-top: 40px;
 }
 
+=======
+}
+
+.hackathon-name{
+  color: #64abf8;
+}
+
+>>>>>>> Stashed changes
 #hero-area .contents .banner-btn {
-  margin-top: 35vh;
+  margin-top: 12vh;
 }
 
 #hero-area .contents .head-title {
@@ -2816,7 +2859,9 @@ section#count {
 
 /* Dark Theme */
 section#about {
-  background: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
@@ -2954,4 +2999,9 @@ li.stylish-list {
 
 .prize-desc {
   display: none;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes
